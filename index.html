@@ -2,19 +2,110 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-   
-    <title>наш первый сайт</title>
-<style>
-    body {font-family: sans-serif;max-width: 600px;margin: 2em auto;}
-</style>
+    <title>Наш первый сайт</title>
+    <style>
+        /* Базовые настройки для всей страницы */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Стиль для карточки профиля */
+        .profile-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* Аватарка с GitHub */
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #007bff;
+            object-fit: cover;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .avatar:hover {
+            transform: scale(1.05);
+        }
+
+        /* Заголовки */
+        h1 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        /* Текстовые блоки */
+        .content-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #007bff;
+            border-radius: 4px;
+            margin: 15px 0;
+            text-align: left;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        /* Подвал сайта */
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 14px;
+            color: #95a5a6;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>привет </h1>
-    <footer>&copy; 2026 Мой проект</footer>
-    <p>добавить подвал</p>
-    <h1>доьавитть параграфт на сайт</h1>
-    <h1>поправка 3 на сайте</h1>
-    <p>размещен с помощью github pages</p>
-    <p>поправка 1</p>
+
+    <div class="profile-card">
+        <!-- Аватарка пользователя urfik -->
+        <img class="avatar" src="https://github.com" alt="Аватарка urfik">
+        
+        <h1>Привет!</h1>
+        <div class="subtitle">Размещен с помощью GitHub Pages</div>
+
+        <div class="content-box">
+            <p><strong>Обновление:</strong> Добавлен новый подвал.</p>
+        </div>
+
+        <div class="content-box">
+            <p><strong>Обновление:</strong> На сайт успешно добавлен новый параграф.</p>
+        </div>
+
+        <div class="content-box">
+            <p><strong>Поправка №3:</strong> Структура сайта оптимизирована.</p>
+            <p><strong>Поправка №1:</strong> Стили успешно применены.</p>
+        </div>
+
+        <footer>
+            &copy; 2026 Мой проект
+        </footer>
+    </div>
+
 </body>
 </html>
